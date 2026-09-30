@@ -9,3 +9,11 @@ def pregunta_01():
     """
 
     raise NotImplementedError
+
+
+
+import gzip
+from pathlib import Path
+
+data = Path(__file__).parents[1] / "data" / "data.csv.gz"
+print(next(f).strip())
